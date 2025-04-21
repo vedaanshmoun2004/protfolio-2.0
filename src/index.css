@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark text-white;
+  }
+}
+
+.glass {
+  @apply backdrop-blur-lg bg-white/10 border border-white/20;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent animate-gradient;
+}
+
+.neon-glow {
+  text-shadow: 0 0 10px theme('colors.primary-glow');
+}
