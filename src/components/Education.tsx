@@ -67,7 +67,7 @@ export default function Education() {
                   <div className="flex items-start justify-between flex-wrap gap-2">
                     <div className="relative">
                       <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors duration-300">
-                        Veda Vyasa D.A.V Public School, India
+                        S. S. Mota Singh Model Sr. Sec. School, India
                       </h3>
                     </div>
                     <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Education</span>
