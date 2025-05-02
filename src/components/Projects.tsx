@@ -10,9 +10,9 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with real-time inventory management",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1600",
+      title: "EventSync",
+      description: "A full-stack Event managment solution with RSVP and Analyltics",
+      image: "/project1.jpg",
       tags: ["React", "Node.js", "PostgreSQL"],
       liveUrl: "#",
       githubUrl: "#"
@@ -21,9 +21,8 @@ export default function Projects() {
       title: "Fitness Tracking App",
       description: "iOS app for tracking workouts and nutrition with ML-powered insights",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=1600",
-      tags: ["Swift", "CoreML", "HealthKit"],
-      liveUrl: "#",
-      githubUrl: "#"
+      tags: ["Swift", "CoreML", "HealthKit"]
+      
     },
     {
       title: "Task Management Dashboard",

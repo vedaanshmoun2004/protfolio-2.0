@@ -93,20 +93,15 @@ export default function Skills() {
               </div>
 
               <div className="space-y-4">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-300">{skill.name}</span>
-                      <span className="text-primary">{skill.level}%</span>
-                    </div>
-                    <div className="h-2 bg-white/5 rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        animate={inView ? { width: `${skill.level}%` } : {}}
-                        transition={{ duration: 1, delay: categoryIndex * 0.1 + skillIndex * 0.1 }}
-                        className="h-full bg-gradient-to-r from-primary to-secondary rounded-full"
-                      />
-                    </div>
+                {category.skills.map((skill) => (
+                  <div
+                    key={skill.name}
+                    className="flex items-center gap-3 pl-2 group"
+                  >
+                    <span className="w-2 h-2 rounded-full bg-gradient-to-r from-primary to-secondary group-hover:scale-125 transition-transform duration-200" />
+                    <span className="text-base font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary group-hover:from-secondary group-hover:to-primary transition-colors duration-200">
+                      {skill.name}
+                    </span>
                   </div>
                 ))}
               </div>
